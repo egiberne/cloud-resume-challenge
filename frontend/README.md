@@ -8,6 +8,16 @@ Create a static website that serves an html resume.
 
 - The  resume follows the format of [Harvard Resume Template](https://careerservices.fas.harvard.edu/resources/category/resume-cv-cover-letter-templates/)
 
-### Harvard Resume Format 
+### Resume Format 
 [Current Resume](./docs/resume-format.docx)
 ![Resume Picture](./assets/resume-format.png)
+
+## Coding
+
+I Keep It Short and Simple since the purpose of this implemention is learning DevOps.
+
+### HTML Structure
+Implementation du bare minimun. 
+
+### CSS Styling
+As minimal as possible. This wil be improve in the Mod oriented for development.
