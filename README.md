@@ -3,6 +3,6 @@
 ## Project
 
 ### Mod DevOPs
-In this implementation of CRC, I tried to Keep it Short and Simple. I am not focus on the devlopment or security.
+The least development or security possible.
 
 [Frontend](./frontend/README.md)

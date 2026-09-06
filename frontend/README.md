@@ -21,3 +21,19 @@ Implementation du bare minimun.
 
 ### CSS Styling
 As minimal as possible. This wil be improve in the Mod oriented for development.
+
+### Local Static Website
+
+To serve the website locally to ajust the CSS
+
+#### Installation 
+
+[Node http-server](https://www.npmjs.com/package/http-server)
+```sh
+npm i http-server -g
+```
+#### Run server
+```sh
+cd frontend\src
+http-server
+```
