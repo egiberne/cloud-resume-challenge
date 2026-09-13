@@ -2,6 +2,7 @@
 # It defines the API endpoints and handles the logic for counting user visits. 
 # It also initializes the SQLite database
 
+from fastapi inport FastAPI
 
 # Import the init_db function from database.py 
 from .db_sqlite import init_db
@@ -11,7 +12,7 @@ from .db_sqlite import get_connection
 # Import system library to check 
 import os
 # Initialize DB only if it does not exist
-if not os.path.exists("visits.db"):
+if not os.path.exists("database\visits.db"):
     init_db()
 
 

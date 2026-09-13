@@ -25,7 +25,7 @@ pip install fastapi
 pip install sqlalchemy
 
 :::: Restart web server
-uvicorn api.main:app --reload
+uvicorn src.main:app --reload
 ```
 
 ## 2. Azure Function using the Azure portal
