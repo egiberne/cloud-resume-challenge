@@ -2,8 +2,6 @@
 # It defines the API endpoints and handles the logic for counting user visits. 
 # It also initializes the SQLite database
 
-from fastapi inport FastAPI
-
 # Import the init_db function from database.py 
 from .db_sqlite import init_db
 # import the get_connection function from database.py
@@ -20,7 +18,7 @@ if not os.path.exists("database\visits.db"):
 ## import fastapi library
 from fastapi import FastAPI, Request
 ## import the CORS| Cross Origin Resource Sharing module
-from fastapi.middleware.cors import CORSMiddleware
+# from fastapi.middleware.cors import CORSMiddleware
 
 
 ## create a fastapi instance 

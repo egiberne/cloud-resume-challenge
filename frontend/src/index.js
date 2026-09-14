@@ -16,26 +16,14 @@ localStorage.setItem("visit_counter", visitCounter)
 
 // Create the HTML content
 let html = `
-    It is your #${visitCounter} visit
+    <div>
+         Visit  #${visitCounter} 
+    </div>  
 `
 // Display the content
-document.getElementById('footer').innerHTML= html
+document.querySelector('footer').innerHTML= html
 
 
-fetch("http://127.0.0.1:8000/health")
-.then(response => response.text())
-.then(data=>console.log(data))
-
-fetch("http://127.0.0.1:8000/echo",{method:"POST"})
-.then(response => response.text())
-.then(data => console.log(data))
-
-fetch("http://127.0.0.1:8000/v1/visits",{
-    method:"POST",
-    body:JSON.stringify({userId:userId})
-})
-.then(response => response.json())
-.then(data => console.log(data))
 
 
 fetch("http://127.0.0.1:8000/v2/visits",{
@@ -51,6 +39,3 @@ fetch('http://127.0.0.1:8000/v2/visits?userId='+userId)
 .then(response => response.json())
 .then(data => console.log(data))
 
-fetch('http://127.0.0.1:8000/v2/visits?dbID='+dbID)
-.then(response => response.json())
-.then(data => console.log(data))
